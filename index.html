@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>NEET Token</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background: #2c2c2c; /* Greyish background */
+            overflow-x: hidden; /* Prevent horizontal scroll */
+            scroll-behavior: smooth; /* Smooth scrolling */
+            position: relative;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px;
+            background: rgba(76, 175, 80, 0.9); /* Greenish background */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay for hero section */
+        }
+        .hero img {
+            width: 150px; /* Logo size */
+        }
+        .section {
+            padding: 60px 20px;
+            background: rgba(0, 0, 0, 0.8); /* Darker section background */
+            margin: 20px 0;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            text-align: center; /* Center text */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(76, 175, 80, 0.9); /* Greenish footer */
+        }
+        button {
+            background-color: #4CAF50; /* Button color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049; /* Darker button on hover */
+        }
+        /* Background logos */
+        .background-logos {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none; /* Allow clicks to pass through */
+            overflow: hidden;
+        }
+        .background-logos img {
+            position: absolute;
+            opacity: 0.1; /* Faded out */
+            animation: plinko 5s linear infinite; /* Animation for movement */
+        }
+        @keyframes plinko {
+            0% { transform: translateY(0) translateX(0); }
+            25% { transform: translateY(20px) translateX(10px); }
+            50% { transform: translateY(40px) translateX(-10px); }
+            75% { transform: translateY(60px) translateX(10px); }
+            100% { transform: translateY(80px) translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#about">About NEET</a>
+        <a href="#memes">Memes</a>
+        <a href="#gallery">Gallery</a>
+    </nav>
+    <div class="background-logos">
+        <!-- Staggered logo positions -->
+        <img src="neet.png" style="top: 5%; left: 5%; width: 50px;"/>
+        <img src="neet.png" style="top: 5%; left: 20%; width: 50px;"/>
+        <img src="neet.png" style="top: 5%; left: 35%; width: 50px;"/>
+        <img src="neet.png" style="top: 5%; left: 50%; width: 50px;"/>
+        <img src="neet.png" style="top: 5%; left: 65%; width: 50px;"/>
+        <img src="neet.png" style="top: 5%; left: 80%; width: 50px;"/>
+        
+        <img src="neet.png" style="top: 20%; left: 10%; width: 50px;"/>
+        <img src="neet.png" style="top: 20%; left: 25%; width: 50px;"/>
+        <img src="neet.png" style="top: 20%; left: 40%; width: 50px;"/>
+        <img src="neet.png" style="top: 20%; left: 55%; width: 50px;"/>
+        <img src="neet.png" style="top: 20%; left: 70%; width: 50px;"/>
+        <img src="neet.png" style="top: 20%; left: 85%; width: 50px;"/>
+        
+        <img src="neet.png" style="top: 35%; left: 5%; width: 50px;"/>
+        <img src="neet.png" style="top: 35%; left: 20%; width: 50px;"/>
+        <img src="neet.png" style="top: 35%; left: 35%; width: 50px;"/>
+        <img src="neet.png" style="top: 35%; left: 50%; width: 50px;"/>
+        <img src="neet.png" style="top: 35%; left: 65%; width: 50px;"/>
+        <img src="neet.png" style="top: 35%; left: 80%; width: 50px;"/>
+        
+        <img src="neet.png" style="top: 50%; left: 10%; width: 50px;"/>
+        <img src="neet.png" style="top: 50%; left: 25%; width: 50px;"/>
+        <img src="neet.png" style="top: 50%; left: 40%; width: 50px;"/>
+        <img src="neet.png" style="top: 50%; left: 55%; width: 50px;"/>
+        <img src="neet.png" style="top: 50%; left: 70%; width: 50px;"/>
+        <img src="neet.png" style="top: 50%; left: 85%; width: 50px;"/>
+        
+        <img src="neet.png" style="top: 65%; left: 5%; width: 50px;"/>
+        <img src="neet.png" style="top: 65%; left: 20%; width: 50px;"/>
+        <img src="neet.png" style="top: 65%; left: 35%; width: 50px;"/>
+        <img src="neet.png" style="top: 65%; left: 50%; width: 50px;"/>
+        <img src="neet.png" style="top: 65%; left: 65%; width: 50px;"/>
+        <img src="neet.png" style="top: 65%; left: 80%; width: 50px;"/>
+        
+        <img src="neet.png" style="top: 80%; left: 10%; width: 50px;"/>
+        <img src="neet.png" style="top: 80%; left: 25%; width: 50px;"/>
+        <img src="neet.png" style="top: 80%; left: 40%; width: 50px;"/>
+        <img src="neet.png" style="top: 80%; left: 55%; width: 50px;"/>
+        <img src="neet.png" style="top: 80%; left: 70%; width: 50px;"/>
+        <img src="neet.png" style="top: 80%; left: 85%; width: 50px;"/>
+        
+        <img src="neet.png" style="top: 95%; left: 5%; width: 50px;"/>
+        <img src="neet.png" style="top: 95%; left: 20%; width: 50px;"/>
+        <img src="neet.png" style="top: 95%; left: 35%; width: 50px;"/>
+        <img src="neet.png" style="top: 95%; left: 50%; width: 50px;"/>
+        <img src="neet.png" style="top: 95%; left: 65%; width: 50px;"/>
+        <img src="neet.png" style="top: 95%; left: 80%; width: 50px;"/>
+    </div>
+    <div class="hero">
+        <img src="neet.png" alt="NEET Token Logo"/> <!-- Using neet.png as logo -->
+        <h1>Welcome to NEET Token</h1>
+        <p>Not in Employment, Education, or Training</p>
+    </div>
+    <div class="section" id="about">
+        <h2>About NEET</h2>
+        <p>NEET is a fun token that represents the spirit of those who are not currently in employment, education, or training. It aims to create a community of like-minded individuals who embrace the NEET lifestyle.</p>
+        <p>With NEET, you can participate in various activities, including meme contests, community events, and more. Our mission is to spread awareness and create a fun environment for everyone!</p>
+        <p>Join us as we embark on this exciting journey together!</p>
+    </div>
+    <div class="section" id="memes">
+        <h2>NEET Memes</h2>
+        <div id="meme-container"></div>
+        <button id="load-memes">Load Memes</button>
+    </div>
+    <div class="section" id="gallery">
+        <h2>NEET Gallery</h2>
+        <div id="gallery-container"></div>
+    </div>
+    <footer>
+        <p>&copy; 2023 NEET Token. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('load-memes').addEventListener('click', function() {
+            const memes = [
+                'Meme 1: "When you realize NEET is a lifestyle!"',
+                'Meme 2: "NEET: The ultimate freedom!"',
+                'Meme 3: "Living the NEET life!"',
+                'Meme 4: "Why work when you can NEET?"',
+                'Meme 5: "NEET: Not just a token, it’s a lifestyle!"'
+            ];
+            
+            const memeContainer = document.getElementById('meme-container');
+            memeContainer.innerHTML = memes.map(meme => `<p>${meme}</p>`).join('');
+        });
+
+        // Gallery functionality
+        const galleryImages = [
+            'image1.jpg',
+            'image2.jpg',
+            'image3.jpg',
+            'image4.jpg',
+            'image5.jpg'
+        ];
+
+        const galleryContainer = document.getElementById('gallery-container');
+        galleryImages.forEach(image => {
+            const imgElement = document.createElement('img');
+            imgElement.src = image;
+            imgElement.alt = 'NEET Image';
+            imgElement.style.width = '100px';
+            imgElement.style.margin = '5px';
+            galleryContainer.appendChild(imgElement);
+        });
+    </script>
+</body>
+</html>
