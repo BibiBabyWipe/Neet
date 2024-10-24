@@ -4,10 +4,11 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive meta tag -->
     <title>NEET Token</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet"> <!-- Add this line -->
     <style>
         /* Base styles for all devices */
         body {
-            font-family: 'Arial', sans-serif; /* Change this to a different font if desired */
+            font-family: 'Bungee', cursive; /* Change this to the new font */
             margin: 0;
             padding: 0;
             color: #fff;
@@ -46,6 +47,7 @@
 
         .hero img {
             width: 150px; /* Logo size */
+            animation: bounce 2s infinite; /* Apply bounce animation */
         }
 
         .section {
@@ -212,6 +214,35 @@
         .social-button:hover {
             background: rgba(76, 175, 80, 1); /* Darker on hover */
         }
+
+        /* Bouncing animation for logo */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px); /* Bounce height */
+            }
+            60% {
+                transform: translateY(-15px); /* Secondary bounce */
+            }
+        }
+
+        /* Glowing text effect */
+        .glow {
+            font-size: 2em; /* Adjust size as needed */
+            text-shadow: 0 0 5px #4CAF50, 0 0 10px #4CAF50, 0 0 15px #4CAF50; /* Green glow */
+            animation: glow-animation 1.5s infinite alternate; /* Animation for glow */
+        }
+
+        @keyframes glow-animation {
+            0% {
+                text-shadow: 0 0 5px #4CAF50, 0 0 10px #4CAF50, 0 0 15px #4CAF50;
+            }
+            100% {
+                text-shadow: 0 0 20px #4CAF50, 0 0 30px #4CAF50, 0 0 40px #4CAF50;
+            }
+        }
     </style>
 </head>
 <body>
@@ -274,8 +305,8 @@
         </div>
         <div class="hero">
             <img src="logo.png" alt="NEET Token Logo"/> <!-- Using neet.png as logo -->
-            <h1>NEET: The Ultimate Rebellion</h1>
-            <p>Not in Employment, Education, or Training. Not in the Matrix.</p>
+            <h1 class="glow">NEET: The Ultimate Rebellion</h1> <!-- Added glow class -->
+            <p class="glow">Not in Employment, Education, or Training. Not in the Matrix.</p> <!-- Added glow class -->
         </div>
         <div class="section" id="about">
             <h2>The NEET Manifesto</h2>
